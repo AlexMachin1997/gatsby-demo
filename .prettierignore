@@ -1,4 +1,7 @@
-.cache
-package.json
+node_modules/*
+
+./src/ServiceWorker/*.js
+
 package-lock.json
-public
+
+./.github/workflows/**/*.yml
