@@ -1,0 +1,30 @@
+.header {
+	padding: 1rem 0 3rem;
+}
+
+.header h1 a {
+	color: black;
+	font-size: 3rem;
+	text-decoration: none;
+}
+
+.header__link {
+	color: #999999;
+	font-size: 0.9rem;
+	margin-right: 1.3rem;
+	text-decoration: none;
+
+	&:hover {
+		color: #666666;
+	}
+}
+
+.header__link--active {
+	color: #333333;
+}
+
+.header__navigation {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+}
