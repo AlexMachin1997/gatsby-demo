@@ -11,10 +11,10 @@
 		display: block;
 		padding: 1rem;
 		text-decoration: none;
-	}
 
-	a:hover {
-		background: #e4e4e4;
+		&:hover {
+			background: #e4e4e4;
+		}
 	}
 
 	h2 {

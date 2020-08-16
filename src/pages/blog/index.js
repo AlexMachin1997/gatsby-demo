@@ -6,7 +6,25 @@ import Layout from '../../components/Layout';
 import './index.scss';
 
 const Blog = () => {
-	// This query requires gatsby-source-filesystem and gatsby-transformer-remark
+	/*
+
+
+	Markdown file query description:
+
+	Queries the local files located in the post directory
+
+	To read the markdown file gatsby-transformer-remark is used, this provides a unumber of propertie such as title, date, raw html etc
+
+
+	NOTE:
+
+	The below code sample is generated in gatsby-node via the onCreateNode api
+
+	field {
+		slug
+	}
+
+	*/
 	const blogPostQuery = useStaticQuery(graphql`
 		query {
 			allMarkdownRemark {

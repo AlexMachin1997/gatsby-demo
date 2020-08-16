@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import './index.scss';
 
 const Footer = () => {
+	// Queries the sites author which is defined in the gatsby-config.js siteMetadata object
 	const data = useStaticQuery(graphql`
 		query {
 			site {

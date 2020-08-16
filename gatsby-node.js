@@ -1,12 +1,10 @@
 const path = require('path');
 
-// Runs for every page creation
-
 /*
 
 onCreateNode description:
 
-
+Called when a new node is created. Plugins wishing to extend or transform nodes created by other plugins should implement this API.
 
 */
 exports.onCreateNode = ({ node, actions }) => {
@@ -28,6 +26,10 @@ exports.onCreateNode = ({ node, actions }) => {
 /*
 
 createPages description:
+
+Tell plugins to add pages. This extension point is called only after the initial sourcing and transformation of nodes plus creation of the GraphQL
+schema are complete so you can query your data in order to create pages.
+
 
 */
 
@@ -53,7 +55,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
 		/*
 
-    createPage() api description
+    createPage() api description:
 
     Tell plugins to add pages. This extension point is called only after the
     initial sourcing and transformation of nodes plus creation of the GraphQL schema

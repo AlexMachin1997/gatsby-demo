@@ -4,6 +4,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import './index.scss';
 
 export default () => {
+	// Queries the sites title which is defined in the gatsby-config.js siteMetadata object
 	const data = useStaticQuery(graphql`
 		query {
 			site {
