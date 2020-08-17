@@ -42,6 +42,11 @@ export default () => {
 							Blog
 						</Link>
 					</li>
+					<li>
+						<Link to='/gallery' className='header__link' activeClassName='header__link--active'>
+							Gallery
+						</Link>
+					</li>
 				</ul>
 			</nav>
 		</header>
