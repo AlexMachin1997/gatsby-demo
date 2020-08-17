@@ -62,7 +62,7 @@ const Gallery = () => {
 			<div className='gallery'>
 				{data.gallery.nodes.map((image, index) => (
 					<div className='gallery__item' key={index}>
-						<Image fixed={image.childImageSharp.fixed} />
+						<Image fluid={image.childImageSharp.fluid} />
 					</div>
 				))}
 			</div>

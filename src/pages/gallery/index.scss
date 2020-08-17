@@ -1,9 +1,35 @@
+// Flexbox
+// .gallery {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	flex-wrap: wrap;
+
+// 	@media (max-width: 600px) {
+// 		justify-content: unset;
+// 	}
+// }
+
+// .gallery__item {
+// 	width: 50%;
+// 	div {
+// 		margin: 0 1rem 1rem 0;
+// 	}
+// }
+
+// CSS Grid
 .gallery {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	@media (max-width: 600px) {
+		grid-template-columns: 2fr;
+	}
 }
 
 .gallery__item {
-	margin: 0 1rem 1rem 0;
 	width: 100%;
+
+	div {
+		margin: 0 1rem 1rem 0;
+	}
 }
