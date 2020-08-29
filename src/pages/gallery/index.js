@@ -44,7 +44,7 @@ const Gallery = () => {
 				nodes {
 					id
 					childImageSharp {
-						fluid(maxWidth: 1000, maxHeight: 500) {
+						fluid(maxWidth: 200, maxHeight: 200) {
 							...GatsbyImageSharpFluid_withWebp
 						}
 						fixed(width: 200, height: 200) {
@@ -62,7 +62,7 @@ const Gallery = () => {
 			<div className='gallery'>
 				{data.gallery.nodes.map((image, index) => (
 					<div className='gallery__item' key={index}>
-						<Image fluid={image.childImageSharp.fluid} />
+						<Image fluid={image.childImageSharp.fluid} loading='eager' />
 					</div>
 				))}
 			</div>

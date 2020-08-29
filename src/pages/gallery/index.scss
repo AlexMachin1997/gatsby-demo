@@ -1,35 +1,37 @@
 // Flexbox
-// .gallery {
-// 	display: flex;
-// 	justify-content: space-between;
-// 	flex-wrap: wrap;
-
-// 	@media (max-width: 600px) {
-// 		justify-content: unset;
-// 	}
-// }
-
-// .gallery__item {
-// 	width: 50%;
-// 	div {
-// 		margin: 0 1rem 1rem 0;
-// 	}
-// }
-
-// CSS Grid
 .gallery {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	max-width: 900px;
 
 	@media (max-width: 600px) {
-		grid-template-columns: 2fr;
+		justify-content: unset;
 	}
 }
 
 .gallery__item {
 	width: 100%;
-
+	max-width: 300px;
 	div {
 		margin: 0 1rem 1rem 0;
 	}
 }
+
+// CSS Grid
+// .gallery {
+// 	display: grid;
+// 	grid-template-columns: 1fr 1fr 1fr;
+
+// 	@media (max-width: 600px) {
+// 		grid-template-columns: 2fr;
+// 	}
+// }
+
+// .gallery__item {
+// 	width: 100%;
+
+// 	div {
+// 		margin: 0 1rem 1rem 0;
+// 	}
+// }
